@@ -1,0 +1,147 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #161622;
+  color: #fafaff;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e2f;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+nav .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00f5a0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  color: #fafaff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav ul li a:hover {
+  color: #00f5a0;
+}
+nav .cta {
+  background: #00f5a0;
+  color: #161622;
+  padding: 0.5rem 1.2rem;
+  border-radius: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.hero {
+  text-align: center;
+  padding: 5rem 2rem 3rem 2rem;
+  background: linear-gradient(135deg, #23234a 60%, #00f5a0 100%);
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.hero .cta {
+  font-size: 1.1rem;
+}
+section {
+  margin: 3rem auto;
+  max-width: 900px;
+  padding: 0 1.5rem;
+}
+section h2 {
+  color: #00f5a0;
+  margin-bottom: 1rem;
+}
+.tokenomics-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.tokenomics-cards .card {
+  background: #23234a;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  min-width: 160px;
+  flex: 1 1 180px;
+  text-align: center;
+}
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+.timeline li {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+.timeline li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 0.6em;
+  height: 0.6em;
+  background: #00f5a0;
+  border-radius: 50%;
+}
+.team-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.team-grid div {
+  background: #23234a;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 180px;
+}
+.team-grid img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+footer {
+  padding: 2rem 1rem 1rem 1rem;
+  background: #1e1e2f;
+  text-align: center;
+}
+footer .socials a {
+  color: #00f5a0;
+  margin: 0 0.8rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer p {
+  color: #888;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+@media (max-width: 700px) {
+  .tokenomics-cards, .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+}
