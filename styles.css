@@ -1,0 +1,78 @@
+
+:root {
+  --bg-light: #f5f5f5;
+  --bg-dark: #121212;
+  --text-light: #111;
+  --text-dark: #eee;
+  --primary: #f39c12;
+}
+
+html[data-theme='light'] {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+html[data-theme='dark'] {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background 0.5s, color 0.5s;
+}
+nav {
+  background: #1c1c1c;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo {
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+nav ul li a {
+  color: #f39c12;
+  text-decoration: none;
+}
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+}
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #f39c12;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.nft-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.nft-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #f39c12;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1c1c1c;
+  color: #aaa;
+}
