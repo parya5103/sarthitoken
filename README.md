@@ -1,4 +1,3 @@
-
 SARTHI Token - KYC Profile (Community Transparency Document)
 
 Founder Information:
